@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+    <div class="container">
+			<a href="Index.html"><img class="logo" src="img/logo/logo.png" alt=""></a>
+      <nav>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<body>    
+    <div class="bg2 image3">
+        <div class="pospric">
+            <h1>Adornos</h1>
+            <p>Glaseado ---------------------------------- 50$</p>
+            <p>Cobertura ------------------------------- 60$</p>
+            <p>Merengue ----------------------------------- 30$</p>
+            <p>Lettering ---------------------------------- 80$</p>
+        </div>
+        <article class="pricing">
+            <h1>Sabores de biscochos</h1>
+            <p>Vainilla ---------------------------------- 180$</p>
+            <p>Chocolate ------------------------------- 100$</p>
+            <p>Fresa ----------------------------------- 120$</p>
+            <p>Limón ---------------------------------- 150$</p>
+           
+
+
+            <form action="/action_page.php">
+                <fieldset>
+                  <legend>Información de pedido:</legend>
+                  <label for="fname">Nombres:</label><br>
+                  <input type="text" id="fname" name="fname" value="Carlos"><br>
+                  <label for="lname">Apellidos:</label><br>
+                  <input type="text" id="lname" name="lname" value="García"><br><br>
+                  <label for="lname">Correo electrónico:</label><br>
+                  <input type="text" id="lcorreo" name="lcorreo" value="example@example.com"><br><br>
+                  <textarea rows="4" cols="70" name="comment" form="usrform">
+                    Introduce la descripción de tu pedido</textarea><br>
+
+                  <label for="cars">Escoge tus sabores:</label>
+
+                  <select multiple>
+                      <option value="volvo">Vainilla</option>
+                      <option value="saab">Chocolate</option>
+                      <option value="opel">Fresa</option>
+                      <option value="audi">Limón</option>
+                  </select>
+          
+                  <p float="right">Manten presionada la tecla ctrl para seleccionar diferentes sabores.</p>
+          
+                  <label for="cars">Escoge tus adornos:</label>
+          
+                  <select multiple>
+                      <option value="volvo">Glaseado</option>
+                      <option value="saab">Cobertura</option>
+                      <option value="opel">Merengue</option>
+                      <option value="audi">Lettering</option>
+                  </select>
+          
+                  <p float="right">Manten presionada la tecla ctrl para seleccionar diferentes adornos.</p>
+          
+                  <p float="right">Al finalizar presione el boton de enviar.</p>
+          
+
+                </fieldset>
+              </form>
+
+            <button type="button" onclick="alert('Se ha enviado su pedido')">Enviar</button>
+        </article>
+    </div>
+    <div class="bg2 image3"></div>
+</body>
+</html>

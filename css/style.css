@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    margin: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    scroll-behavior: smooth;
+  }
+ .bg {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: thick;
+    border: #000;
+    position: relative;
+
+}
+
+.bg2 {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+ }
+
+  .image2 {
+    background-image: url("https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+  }
+  .image1 {
+    background-image: url("https://images.unsplash.com/photo-1586195833823-bf90376c614d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  }
+  .image4 {
+    background-image: url("https://images.unsplash.com/photo-1592773790059-bb09b7b00b56?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80");
+  }
+  .image3 {
+    background-image: url("https://images.unsplash.com/photo-1607662256021-751dc3939f2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+  }
+  
+  .text {
+     font-size: 30px;
+     text-align: center;
+     position: fixed;
+     top: 30%;
+     left: 30%;
+     width: 40%;
+     padding: 16px;
+     color: white;
+  }
+
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Barra de navegación*/
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  border: none;
+  box-shadow: none;
+  transition: background 0.7s ease-out;
+  background: transparent!important;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  width: 150px;
+  height: 100;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #000000;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+article {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  position: absolute;
+}
+
+.contact {
+  margin-top: 15%;
+}
+
+.pricing {
+  color: white; 
+  position: absolute;
+}
+
+.pospric{
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+}
